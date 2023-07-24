@@ -1,0 +1,211 @@
+/* View source code start */
+function toggle_visibility(id) {
+  var e = document.getElementById(id);
+  e.classList.toggle("visible");
+}
+
+/* View source code end */
+/* search start */
+
+function mysearch() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById("dl-search");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("dl-library");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+function setFocus() {
+  var container = document.getElementById("container").focus();
+  // alert('ss');
+}
+function applyOutlineOnFocus() {
+  const button = document.getElementById("uploadField");
+  const div = document.getElementById("filedrag");
+
+  button.addEventListener("focus", function () {
+    div.style.outline = "2px solid blue";
+  });
+
+  button.addEventListener("blur", function () {
+    div.style.outline = "";
+  });
+}
+
+// const button = document.getElementById("uploadField");
+// const div = document.getElementById("filedrag");
+
+// button.addEventListener("focus", function() {
+//   div.style.outline = "2px solid blue";
+// });
+
+// button.addEventListener("blur", function() {
+//   div.style.outline = "";
+// });
+
+/* search end */
+
+/* copy code start */
+
+function copy(copytext, id) {
+  var copyText = document.getElementById(id).textContent;
+  var textArea = document.createElement("textarea");
+  textArea.textContent = copyText;
+  document.body.append(textArea);
+  textArea.select();
+  document.execCommand("copy");
+  textArea.className = "hide";
+  copytext.children[0].innerText = "Copied";
+}
+
+function copied(copytext) {
+  copytext.children[0].innerText = "Copy to clipboard";
+}
+
+/* copy code end */
+
+/* sticky header start */
+
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", myFunctionForSticky);
+
+  function myFunctionForSticky() {
+    var header = document.getElementById("dl-right-nav");
+    if (window.pageYOffset >= 108) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+});
+
+/* sticky header end */
+
+/* back to top start */
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+/* back to top end */
+
+/* right side navigation select state start */
+
+function myFunction(e) {
+  var elems = document.querySelector("#dl-right-nav li a.selected");
+  if (elems !== null) {
+    elems.classList.remove("selected");
+  }
+  e.target.className = "selected";
+}
+
+/* right side navigation select state end */
+
+/* left side navigation html binding start */
+
+function bindEvents() {
+  var elements = document.querySelectorAll("#navigation li");
+  for (var index = 0; index < elements.length; index++) {
+    var li = elements[index];
+    li.addEventListener("click", function (event) {
+      var filename = event.target.getAttribute("filename");
+      includeHTML(filename);
+      var elems = document.querySelector("#navigation li.selected");
+      if (elems !== null) {
+        elems.classList.remove("selected");
+      }
+      this.classList.add("selected");
+    });
+  }
+}
+
+function includeHTML(filename) {
+  var elmnt = document.querySelector(".dl-preview-container");
+  if (filename) {
+    xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4) {
+        if (this.status == 200) {
+          elmnt.innerHTML = this.responseText;
+        }
+        if (this.status == 404) {
+          elmnt.innerHTML =
+            "<div style='text-align: center;font-size: 30px;width: 100%;height: 100%;display: table;'><div style='display: table-cell;vertical-align: middle;'>Page not found.</div></div>";
+        }
+      }
+    };
+    xhttp.open("GET", filename, true);
+    xhttp.send();
+    return;
+  }
+}
+
+if (document.readyState == "complete") {
+  bindEvents();
+} else {
+  document.addEventListener("readystatechange", function (event) {
+    if (event.target.readyState === "complete") {
+      bindEvents();
+    }
+  });
+}
+
+/* left side navigation html binding end */
+/* onload focus script starts */
+function FocusDesignLibrary() {
+  document.getElementById("dl-sidebar-header").focus();
+}
+/* onload focus script ends */
+
+// onclick theme function starts
+
+function ThemeFunction() {
+  document.getElementById("freeze-layer").style.display = "block";
+  document.getElementById("theme").style.display = "block";
+  document.getElementById("container").style.overflow = "hidden";
+}
+
+// close theme container
+function closeThemefunction() {
+  document.getElementById("freeze-layer").style.display = "none";
+  document.getElementById("theme").style.display = "none";
+  document.getElementById("container").style.overflow = "initial";
+}
+
+{
+  /* <script type='text/javascript'> */
+}
+// alert('ss');
+document.getElementById("buttonId").progressIndicator = {
+  type: "circular",
+  position: "left",
+};
+// </script>
+
+document.getElementById("settings").setProperties({
+  track: {
+    onStateLabel: "On",
+    offStateLabel: "Off",
+  },
+});

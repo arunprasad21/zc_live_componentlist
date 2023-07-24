@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>C5 Aria Design Library</title>
+    <link href="styles/common.css" rel="stylesheet" type="text/css" />
+    <link href="styles/form.css" rel="stylesheet" type="text/css" />
+    <link href="styles/icon-style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/zc-live-fonticons.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script type='text/javascript' src='js/dl.js'></script>
+
+    <script src="zoho-components/thirdparty/jquery-3.1.1.js"></script>
+
+
+</head>
+
+<body onload="FocusDesignLibrary()">
+    <div class="dl-main-container zc-live-clearfix">
+        <!--left sidebar start -->
+        <div class="dl-sidebar-menu" id="zc_side_menu">
+            <div class="dl-sidebar-head">
+                <a href="index.html" tabindex="1" id="dl-sidebar-header" class="zc-live-clearfix">
+                    <h1>Livemode Design Library</h1>
+                </a>
+                <h4>Version 1.1</h4>
+                <div class="dl-search-bar">
+                    <input type="text" id="dl-search" onkeyup="mysearch()" placeholder="Search" tabindex="1" />
+                </div>
+            </div>
+            <div class="dl-sidenav-list">
+                <div id="dl-library">
+                    <ul id="navigation" role="tablist" aria-label="Components">
+                        <li class="dl-components-title"><a>Components</a></li>
+                        <li class="dl-components">
+                            <a href="#dl-src-code-icon" filename="accordion.html" tabindex="1" role="tab">Accordion</a>
+                        </li>
+                        <li class="dl-components">
+                            <a href="#dl-src-code-icon" filename="button.html" tabindex="1" role="tab">Button</a>
+                        </li>
+                        <li class="dl-components">
+                            <a href="#dl-src-code-icon" filename="checkbox.html" tabindex="1" role="tab">Checkbox</a>
+                        </li>
+                        <li class="dl-components">
+                            <a href="#dl-src-code-icon" filename="dropdown.html" tabindex="1" role="tab">Dropdown</a>
+                        </li>
+                        <li class="dl-components">
+                            <a href="#dl-src-code-icon" filename="input.html" tabindex="1" role="tab">Input Fields</a>
+                        </li>
+                        <li class="dl-components">
+                            <a href="#dl-src-code-icon" filename="link.html" tabindex="1" role="tab">Link</a>
+                        </li>
+                        <li class="dl-components">
+                            <a href="#dl-src-code-icon" filename="overlay.html" tabindex="1" role="tab">Overlay</a>
+                        </li>
+                        <li class="dl-components">
+                            <a href="#dl-src-code-icon" filename="tab.html" tabindex="1" role="tab">Tab</a>
+                        </li>
+                        <li class="dl-components">
+                            <a href="#dl-src-code-icon" filename="toast.html" tabindex="1" role="tab">Toast</a>
+                        </li>
+                        <li class="dl-components">
+                            <a href="#dl-src-code-icon" filename="tooltip.html" tabindex="1" role="tab">Tooltip</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dl-preview-container" id="container" tabindex="-1" role="main">
+            <div>
+                <div class="dl-getting-started">
+                    <h1>
+                        <span class="dl-title">Design Library</span>
+                        <span class="dl-tagline">User Interface - Language For Web</span>
+                        <span class="dl-content">UI components for all your front-end needs, just copy and paste
+                            the code where you want.</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <button onclick="topFunction()" id="myBtn" class="dl-backtotop zc-common-angle-up zc-em" title="Go to top"></button>
+</body>
+<script src="./js/aria.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="js/dl.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
+
+</html>
