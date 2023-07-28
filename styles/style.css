@@ -193,7 +193,7 @@ body {
 .dl-main-container .dl-sidebar-menu {
   height: 100%;
   width: 300px;
-  background-color: #191c3c;
+  background-color: #07012c;
   color: #fff;
   float: left;
   /* position: fixed; */
@@ -266,10 +266,10 @@ body {
   color: #fff;
 }
 .dl-sidebar-menu .dl-components a {
-  color: #02c7a1;
+  color: #d8dde9;
   line-height: 12px;
-  padding: 12px 50px;
-  font-size: 14px;
+  padding: 16px 24px;
+  font-size: 15px;
   cursor: pointer;
   display: inline-block;
   width: 100%;
@@ -282,17 +282,20 @@ body {
 .dl-sidebar-menu .dl-components a:hover,
 .dl-sidebar-menu .dl-components a:focus {
   background-color: #28284f;
-  color: white;
+  color: #118cfd;
   /* border-left: 2px solid transparent; */
 }
 .dl-sidebar-menu .dl-components.selected {
   background-color: #28284f;
-  color: white;
-  border-left: 2px solid #02c7a1;
+  color: #118cfd;
+  border-left: 4px solid #118cfd;
 }
 .dl-sidebar-menu .dl-components {
-  border-left: 2px solid transparent;
+  border-left: 4px solid transparent;
 }
+.dl-sidebar-menu .dl-components:hover{
+    border-left: 4px solid #118cfd;
+  }
 .dl-sidebar-menu .dl-components a:focus-visible {
   border: 1.5px solid #295bf9;
   outline: none !important;
@@ -346,8 +349,8 @@ body {
 /*preview container header*/
 
 .dl-preview-container .dl-preview-header {
-  /* border-bottom: 1px solid #d8d8d8; */
-  background-color: #f7f7f8;
+  border-bottom: 1px solid #f2f3f7;
+  background: #fafbfc;
   padding: 30px 50px;
   position: sticky;
   /* z-index: -1; */
@@ -358,7 +361,7 @@ body {
 }
 
 .dl-preview-container .dl-preview-header h2 {
-  font-size: 28px;
+  font-size: 21px;
   font-family: "Lato", sans-serif;
   letter-spacing: 0.24px;
   font-weight: 600;
@@ -369,7 +372,7 @@ body {
   color: #222;
   font-family: "Lato", sans-serif;
   letter-spacing: 0.24px;
-  padding-top: 5px;
+  padding-top: 12px;
   float: left;
 }
 /*preview container body*/
@@ -380,11 +383,13 @@ body {
   height: calc(100% - 100px);
 }
 .dl-preview-container .dl-preview-body {
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
   padding: 0 50px 30px;
   width: calc(100% - 300px);
   /* margin-right: 378px; */
-  border-right: 1px solid #cccccc;
+  border-right: 1px solid #f2f3f7;
   height: 100%;
   overflow-y: scroll;
 }
@@ -405,20 +410,21 @@ body {
 }
 
 .dl-preview-container .dl-preview-content .zc-live-clearfix h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  color: #07012c;
   border: none;
   font-family: "Lato", sans-serif;
   letter-spacing: 0.17px;
   padding: 0px 0px 5px;
 }
 .dl-preview-container .dl-preview-content h4 {
-  color: #444;
-  font-size: 14px;
+  color: #081d3b;
+  font-size: 15px;
   display: inline-block;
   font-family: "Lato", sans-serif;
-  letter-spacing: 0.24px;
+  letter-spacing: 0.3px;
+  margin-top: 8px;
 }
 .dl-preview-container .dl-sourcecode-icon {
   background: url("../images/code.svg") no-repeat 6px 9px;
@@ -455,12 +461,14 @@ body {
   display: block;
 }
 .dl-preview-container .dl-component-wrapper {
-  width: 100%;
-  height: 90px;
-  padding: 25px;
-  margin: 15px 0px 0px;
-  border: 1px solid #cccccc;
-  display: inline-table;
+    width: 100%;
+    height: 90px;
+    padding: 25px;
+    margin: 15px 0px 0px;
+    border: 1px solid #f2f3f7;
+    display: inline-table;
+    background: #fafbfc;
+    border-radius: 8px;
   /* border-radius : 8px 8px 0 0; */
 }
 .dl-preview-container .dl-src-code {
@@ -1034,4 +1042,37 @@ body .dl-backtotop:hover {
 .dl-main-container {
     display: flex;
 
+}
+.dl-preview-body h2 {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    background: #f4f4f4;
+    padding: 20px 10px;
+}
+.filter-container{
+    padding: 30px 50px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 999 ;
+    width: calc(100% - 300px);
+    border-right: 1px solid #f2f3f7;
+    border-bottom: 1px solid #f2f3f7;
+}
+.scrolltop::before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: 100px;
+    margin-top: -100px;
+    /* display: block;    
+    position: relative;     
+    top: -100px; */
+    visibility: hidden;
+}
+.navbar-title{
+    font-size: 20px;
+    padding: 20px 30px;
 }
