@@ -1043,21 +1043,21 @@ body .dl-backtotop:hover {
   display: block;
   margin: 10px 0;
 }
-.dl-component-wrapper  h5{
-    font-size: 16px;
-    padding: 10px 0;
-    font-weight: 500;
+.dl-component-wrapper h5 {
+  font-size: 16px;
+  padding: 10px 0;
+  font-weight: 500;
 }
 .dl-main-container {
   display: flex;
 }
 .dl-preview-body h2 {
-  font-size: 20px;
+  /* font-size: 20px;
   font-weight: 600;
   width: 100%;
   border-radius: 4px;
   background: #f2f3f7;
-  padding: 20px 16px;
+  padding: 20px 16px; */
 }
 .filter-container {
   padding: 30px 50px;
@@ -1148,4 +1148,21 @@ body .dl-backtotop:hover {
 .filterButtonactive {
   color: white !important;
   background-color: var(--color-secondary) !important;
+}
+.headingSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 4px;
+  background: #f2f3f7;
+  padding: 20px 16px;
+}
+.sectionBadge {
+  padding: 5px 10px;
+  background-color: #07012c;
+  color: #fff;
+  border-radius: 4px;
 }
