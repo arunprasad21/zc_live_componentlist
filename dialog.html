@@ -5,9 +5,16 @@
     </div>
 </div>
 <div class="dl-preview-body-wrapper zc-live-clearfix">
+    <div class="filter-container">
+        <div class="multi-button">
+            <a onclick="setButtonActive(this)" class="filterButton" href="#guideline">All</a>
+            <a onclick="setButtonActive(this)" class="filterButton" href="#guideline">Guideline</a>
+            <a onclick="setButtonActive(this)" class="filterButton" href="#nonguideline">Non-Guideline</a>
+        </div>
+    </div>
     <div class="dl-preview-body">
         <!--component-->
-        <div class="dl-preview-content" id="primary-button">
+        <div class="dl-preview-content scrolltop" id="guideline">
             <div class="zc-live-clearfix">
                 <h3>Camera Dialog</h3>
                 <!-- <h4>A button indicate primary state with specific color</h4> -->
@@ -17,17 +24,7 @@
             </div>
         </div>
         <!--component-->
-        <!--component-->
-        <div class="dl-preview-content" id="primary-button">
-            <div class="zc-live-clearfix">
-                <h3>Import from cloud</h3>
-                <!-- <h4>A button indicate primary state with specific color</h4> -->
-            </div>
-            <div class="dl-component-wrapper">
-                <img src="images/Components/dialog/importfromcloud.png" width="800px">
-            </div>
-        </div>
-        <!--component-->
+
         <!--component-->
         <div class="dl-preview-content" id="primary-button">
             <div class="zc-live-clearfix">
@@ -170,8 +167,8 @@
                 <img src="images/Components/dialog/signaturedialog.png" width="800px">
             </div>
         </div>
-        <!--component-->       
-         <!--component-->
+        <!--component-->
+        <!--component-->
         <div class="dl-preview-content" id="primary-button">
             <div class="zc-live-clearfix">
                 <h3>Loader dialog</h3>
@@ -182,8 +179,32 @@
             </div>
         </div>
         <!--component-->
+        <!--component-->
+        <div class="dl-preview-content" id="primary-button">
+            <div class="zc-live-clearfix">
+                <h3>Danger dialog</h3>
+                <!-- <h4>A button indicate primary state with specific color</h4> -->
+            </div>
+            <div class="dl-component-wrapper">
+                <img src="images/Components/dialog/dangerdialog.png" width="800px">
+            </div>
+        </div>
+        <!--component-->
 
-        <h2>Guideline missed fields</h2>
+        <div id="nonguideline">
+            <h2 id="divElement">Guideline Missed buttons</h2>
+        </div>
+        <!--component-->
+        <div class="dl-preview-content" id="primary-button">
+            <div class="zc-live-clearfix">
+                <h3>Import from cloud</h3>
+                <!-- <h4>A button indicate primary state with specific color</h4> -->
+            </div>
+            <div class="dl-component-wrapper">
+                <img src="images/Components/dialog/importfromcloud.png" width="800px">
+            </div>
+        </div>
+        <!--component-->
         <!--component-->
         <div class="dl-preview-content" id="primary-button">
             <div class="zc-live-clearfix">
@@ -206,17 +227,7 @@
             </div>
         </div>
         <!--component-->
-        <!--component-->
-        <div class="dl-preview-content" id="primary-button">
-            <div class="zc-live-clearfix">
-                <h3>Danger dialog</h3>
-                <!-- <h4>A button indicate primary state with specific color</h4> -->
-            </div>
-            <div class="dl-component-wrapper">
-                <img src="images/Components/dialog/dangerdialog.png" width="800px">
-            </div>
-        </div>
-        <!--component-->
+
 
     </div>
     <div id="dl-right-nav" class="dl-rightside-nav">
