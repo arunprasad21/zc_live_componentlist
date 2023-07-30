@@ -152,3 +152,43 @@ function FocusDesignLibrary()
      document.getElementById("dl-sidebar-header").focus();
 }
 /* onload focus script ends */
+
+
+function asdf(){
+    document.getElementById("divElement").scrollIntoView();
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    // alert('ss');
+    const scrollButton = document.getElementById("scrollButton");
+    const targetDiv = document.getElementById("targetDiv");
+
+    scrollButton.addEventListener("click", function () {
+        // Calculate the distance from the top of the page to the targetDiv
+        const targetDivPosition = targetDiv.getBoundingClientRect().top;
+        // Get the current scroll position
+        const scrollOffset = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Calculate the final scroll position
+        const finalScrollPosition = targetDivPosition + scrollOffset;
+
+        // Use smooth scrolling to scroll to the targetDiv
+        window.scrollTo({
+            top: finalScrollPosition,
+            behavior: "smooth"
+        });
+    });
+});
+
+
+function setButtonActive(elem) {
+    // get all 'a' elements
+    var a = document.getElementsByClassName('filterButton');
+    // loop through all 'a' elements
+    for (i = 0; i < a.length; i++) {
+        // Remove the class 'active' if it exists
+        a[i].classList.remove('filterButtonactive')
+    }
+    // add 'active' classs to the element that was clicked
+    elem.classList.add('filterButtonactive');
+}

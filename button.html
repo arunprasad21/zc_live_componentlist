@@ -6,14 +6,15 @@
 </div>
 <div class="dl-preview-body-wrapper zc-live-clearfix">
     <div class="filter-container">
-        <a class="zc-live-primary-btn" href="#asdf">All</a>
-        <a class="zc-live-primary-btn" href="#asdf">Guideline</a>
-        <a class="zc-live-primary-btn" href="#as">Non-Guideline</a>
+        <div class="multi-button">
+            <a onclick="setButtonActive(this)" class="filterButton" href="#guideline">All</a>
+            <a onclick="setButtonActive(this)" class="filterButton" href="#guideline">Guideline</a>
+            <a onclick="setButtonActive(this)" class="filterButton" href="#nonguideline">Non-Guideline</a>
+        </div>
     </div>
-    <div class="dl-preview-body" id="">
-
+    <div class="dl-preview-body">
         <!--component-->
-        <div class="dl-preview-content" id="asdf">
+        <div class="dl-preview-content scrolltop" id="guideline">
             <div class="zc-live-clearfix">
                 <h3>Primary Button</h3>
                 <h4>A button indicate primary state with specific color</h4>
@@ -24,7 +25,7 @@
         </div>
         <!--component-->
         <!--component-->
-        <div class="dl-preview-content" id="asdfgg">
+        <div class="dl-preview-content">
             <div class="zc-live-clearfix">
                 <h3>Primary Outline Button</h3>
             </div>
@@ -103,8 +104,6 @@
             </div>
         </div>
         <!--component-->
-
-
         <!--component-->
         <div class="dl-preview-content" id="primary-button">
             <div class="zc-live-clearfix">
@@ -115,7 +114,6 @@
             </div>
         </div>
         <!--component-->
-
         <!--component-->
         <div class="dl-preview-content" id="primary-button">
             <div class="zc-live-clearfix">
@@ -136,7 +134,6 @@
             </div>
         </div>
         <!--component-->
-
         <!--component-->
         <div class="dl-preview-content" id="primary-button">
             <div class="zc-live-clearfix">
@@ -147,7 +144,6 @@
             </div>
         </div>
         <!--component-->
-
         <h6>Pages</h6>
         <!--component-->
         <div class="dl-preview-content" id="primary-button">
@@ -164,13 +160,13 @@
             <div class="zc-live-clearfix">
                 <h3>Pages Button</h3>
             </div>
-            <div class="dl-component-wrapper">
+            <div class="dl-component-wrapper" >
                 <img src="images/Components/buttons/pagespillbutton.png" style="width: 150px;">
             </div>
         </div>
         <!--component-->
-        <div class="">
-            <h2 id="as">Guideline Missed buttons</h2>
+        <div id="nonguideline">
+            <h2 id="divElement">Guideline Missed buttons</h2>
         </div>
         <!--component-->
         <div class="dl-preview-content " id="primary-button">
