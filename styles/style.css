@@ -617,7 +617,7 @@ body {
   top: 0px;
   height: 100%;
   width: 300px;
-  padding-top: 250px;
+  padding-top: 200px;
   /* border-left: 1px solid #cccccc; */
 }
 .dl-rightside-nav ul {
@@ -1091,7 +1091,7 @@ body .dl-backtotop:hover {
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
   --font-family: monospace;
   --color-primary: white;
-  --color-secondary: black;
+  --color-secondary: #118cfd;
   --color-tertiary: dodgerblue;
   --shadow: rgba(0, 0, 0, 0.1);
   --space: 1rem;
@@ -1118,7 +1118,7 @@ body .dl-backtotop:hover {
   cursor: pointer;
   position: relative;
   padding: 8px 10px;
-  border: var(--border-size) solid black;
+  border: var(--border-size) solid #118cfd;
   color: var(--color-secondary);
   background-color: var(--color-primary);
   font-size: 16px;
@@ -1130,7 +1130,7 @@ body .dl-backtotop:hover {
   border-radius: 0px 8px 8px 0;
 }
 .multi-button a + a {
-  border-left: var(--border-size) solid black;
+  border-left: var(--border-size) solid #118cfd;
   margin-left: calc(var(--border-size) * -1);
 }
 
