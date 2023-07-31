@@ -1139,7 +1139,7 @@ body .dl-backtotop:hover {
   color: white;
   outline: none;
   text-shadow: none;
-  background-color: var(--color-secondary);
+  background-color: #2f99fb;
 }
 .multi-button a:active {
   color: white;
