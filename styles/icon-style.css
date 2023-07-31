@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'zc-em-fonticons';
-  src:  url('../fonts/zc-em-fonticons.eot?5vbews');
-  src:  url('../fonts/zc-em-fonticons.eot?5vbews#iefix') format('embedded-opentype'),
-        url('../fonts/zc-em-fonticons.ttf?5vbews') format('truetype'),
-        url('../fonts/zc-em-fonticons.woff?5vbews') format('woff'),
-        url('../fonts/zc-em-fonticons.svg?5vbews#zc-em-fonticons') format('svg');
+  src:  url('../images/icon/zcicons/zc-em-fonticons.eot');
+  src:  url('../images/icon/zcicons/zc-em-fonticons.eot') format('embedded-opentype'),
+        url('../images/icon/zcicons/zc-em-fonticons.ttf') format('truetype'),
+        url('../images/icon/zcicons/zc-em-fonticons.woff') format('woff'),
+        url('../images/icon/zcicons/zc-em-fonticons.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }

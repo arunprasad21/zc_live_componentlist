@@ -351,11 +351,14 @@ body {
 /*preview container header*/
 
 .dl-preview-container .dl-preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #f2f3f7;
   background: #fafbfc;
   padding: 24px 50px;
   position: fixed;
-  /* z-index: -1; */
+  z-index: 99;
   left: 300px;
   right: 0;
   top: 0;
@@ -964,7 +967,7 @@ body .dl-backtotop:hover {
   top: 0;
   display: none;
   position: fixed;
-  z-index: 100;
+  z-index: 999;
   overflow: hidden;
   animation: slide-left-active 0.2s ease-in-out;
 }
@@ -1067,7 +1070,7 @@ body .dl-backtotop:hover {
   left: 300px;
   right: 300px;
   background-color: #fff;
-  z-index: 999;
+  z-index: 99;
   width: calc(100% - 300px);
   border-right: 1px solid #f2f3f7;
   border-bottom: 1px solid #f2f3f7;
