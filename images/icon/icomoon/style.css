@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?v1az4i');
+  src:  url('fonts/icomoon.eot?v1az4i#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.woff2?v1az4i') format('woff2'),
+    url('fonts/icomoon.ttf?v1az4i') format('truetype'),
+    url('fonts/icomoon.woff?v1az4i') format('woff'),
+    url('fonts/icomoon.svg?v1az4i#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Icon--1:before {
+  content: "\e900";
+}
+.icon-Icon--2:before {
+  content: "\e901";
+}
+.icon-Icon--3:before {
+  content: "\e902";
+}
+.icon-Icon--4:before {
+  content: "\e903";
+}
+.icon-Icon--5:before {
+  content: "\e904";
+}
+.icon-Icon--6:before {
+  content: "\e905";
+}
+.icon-Icon--7:before {
+  content: "\e906";
+}
+.icon-Icon--8 .path1:before {
+  content: "\e907";
+  color: rgb(0, 0, 0);
+}
+.icon-Icon--8 .path2:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Icon--8 .path3:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Icon--8 .path4:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Icon--9:before {
+  content: "\e90b";
+}
+.icon-Icon--10:before {
+  content: "\e90c";
+}
+.icon-Icon--11:before {
+  content: "\e90d";
+}
+.icon-Icon--12:before {
+  content: "\e90e";
+}
+.icon-Icon--13:before {
+  content: "\e90f";
+}
+.icon-Icon--14:before {
+  content: "\e910";
+}
+.icon-Icon--15:before {
+  content: "\e911";
+}
+.icon-Icon--16:before {
+  content: "\e912";
+}
+.icon-Icon--17:before {
+  content: "\e913";
+}
+.icon-Icon--18:before {
+  content: "\e914";
+}
+.icon-Icon--19:before {
+  content: "\e915";
+}
+.icon-Icon--20:before {
+  content: "\e916";
+}
+.icon-Icon--21:before {
+  content: "\e917";
+}
+.icon-Icon--22:before {
+  content: "\e918";
+}

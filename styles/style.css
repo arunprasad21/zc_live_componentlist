@@ -268,10 +268,11 @@ body {
 .dl-sidebar-menu .dl-components a {
   color: #d8dde9;
   line-height: 12px;
-  padding: 16px 24px;
+  padding: 16px 20px;
   font-size: 15px;
   cursor: pointer;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: 100%;
   text-decoration: none;
   font-family: "Lato", sans-serif;

@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'zcicons';
+    src:url('../images/icon/icomoon/fonts/icomoon.eot');
+    src:url('../images/icon/icomoon/fonts/icomoon.eot') format('embedded-opentype'),
+        url('../images/icon/icomoon/fonts/icomoon.woff') format('woff'),
+        url('../images/icon/icomoon/fonts/icomoon.woff2') format('woff'),
+        url('../images/icon/icomoon/fonts/icomoon.svg') format('svg'),
+        url('../images/icon/icomoon/fonts/icomoon.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="zci-"]:before,
+[class*="zci-"]:before 
+{
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'zcicons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    padding: 0 10px;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+/* [class^="zci-"]:before,
+[class*="zci-"]:before 
+{
+    color: #fff;
+} */
+.zci-accordion:before{
+    content:"\e900"; 
+}
+.zci-alert:before{
+    content:"\e906"; 
+}
+.zci-badge:before{
+    content:"\e90c"; 
+}
+.zci-button:before{
+    content:"\e915"; 
+}
+.zci-card:before{
+    content:"\e90b"; 
+}
+.zci-checkbox:before{
+    content:"\e901"; 
+}
+.zci-comment:before{
+    content:"\e90e"; 
+}
+.zci-cornerradius:before{
+    content:"\e90c"; 
+}
+.zci-dialog:before{
+    content:"\e903"; 
+}
+.zci-dropdown:before{
+    content:"\e905"; 
+}
+.zci-emptydatasets:before{
+    content:"\e910"; 
+}
+.zci-errormessage:before{
+    content:"\e906"; 
+}
+.zci-fieldtitle:before{
+    content:"\e90e"; 
+}
+.zci-icon:before{
+    content:"\e914"; 
+}
+.zci-info:before{
+    content:"\e918"; 
+}
+.zci-input:before{
+    content:"\e90d"; 
+}
+.zci-label:before{
+    content:"\e90b"; 
+}
+.zci-link:before{
+    content:"\e90d"; 
+}
+.zci-list:before{
+    content:"\e90e"; 
+}
+.zci-loader:before{
+    content:"\e904"; 
+}
+.zci-overlay:before{
+    content:"\e903"; 
+}
+.zci-popover:before{
+    content:"\e911"; 
+}
+.zci-profile:before{
+    content:"\e917"; 
+}
+.zci-radio:before{
+    content:"\e912"; 
+}
+.zci-reportbg:before{
+    content:"\e916"; 
+}
+.zci-search:before{
+    content:"\e913"; 
+}
+.zci-slider:before{
+    content:"\e90f"; 
+}
+.zci-subform:before{
+    content:"\e90e"; 
+}
+.zci-tab:before{
+    content:"\e915"; 
+}
+.zci-timestamp:before{
+    content:"\e90b"; 
+}
+.zci-toast:before{
+    content:"\e90c"; 
+}
+.zci-toggle:before{
+    content:"\e902"; 
+}
+.zci-tooltip:before{
+    content:"\e911"; 
+}
+.zci-upload:before{
+    content:"\e907"; 
+}
