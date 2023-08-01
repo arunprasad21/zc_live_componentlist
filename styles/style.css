@@ -191,6 +191,8 @@ body {
 /*left sidebar start*/
 
 .dl-main-container .dl-sidebar-menu {
+    display: flex;
+    flex-direction: column;
   height: 100%;
   width: 300px;
   background-color: #07012c;
@@ -247,7 +249,7 @@ body {
 .dl-sidebar-menu .dl-sidenav-list {
   cursor: default;
   overflow-y: auto;
-  height: calc(100% - 276px);
+  /* height: calc(100% - 216px); */
 }
 /*left side navigation list*/
 
@@ -291,6 +293,9 @@ body {
   color: #118cfd;
   border-left: 4px solid #118cfd;
 }
+.dl-sidebar-menu .dl-components.selected a{
+    color: #118cfd;
+  }
 .dl-sidebar-menu .dl-components {
   border-left: 4px solid transparent;
 }
