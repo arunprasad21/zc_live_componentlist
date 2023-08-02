@@ -287,17 +287,21 @@ body {
   background-color: #4D476B;
   color: #fff;
   border-radius: 4px;
+  transition: all .35s ease-out;
+
   /* border-left: 2px solid transparent; */
 }
 .dl-sidebar-menu .dl-components.selected {
   background-color: #5051f9 ;
   color: #fff ;
   border-radius: 4px;
+  transition: all .35s ease-out;
   /* border-left: 4px solid #5051f9 !important; */
 }
 .dl-sidebar-menu .dl-components.selected a {
   background-color: #5051f9 !important;
   color: #fff;
+  transition: all .5s ease-out;
 }
 .dl-sidebar-menu .dl-components {
   /* border-left: 4px solid transparent; */
@@ -1103,33 +1107,10 @@ body .dl-backtotop:hover {
 #nonguideline{
     margin: 20px 0;
 }
-:root {
-  --border-size: 1px;
-  --duration: 250ms;
-  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
-  --font-family: monospace;
-  --color-primary: white;
-  --color-secondary: #5051f9;
-  --color-tertiary: dodgerblue;
-  --shadow: rgba(0, 0, 0, 0.1);
-  --space: 1rem;
-}
-
-/* * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    height: 100vh;
-    margin: 0 auto;
-    display: grid;
-    place-items: center;
-    padding: calc(var(--space) * 2);
-    max-width: 700px;
-  } */
 
 .multi-button {
   display: flex;
+  transition: all 2s ease-out;
 }
 
 .multi-button a {
@@ -1138,9 +1119,9 @@ body .dl-backtotop:hover {
   cursor: pointer;
   position: relative;
   padding: 8px 10px;
-  border: var(--border-size) solid #d8dae2;
-  color: var(--color-secondary);
-  background-color: var(--color-primary);
+  border: 1px solid #d8dae2;
+  color: #5051f9;
+  background-color: #fff;
   font-size: 15px;
 }
 .multi-button a:first-child {
@@ -1163,10 +1144,11 @@ body .dl-backtotop:hover {
   text-shadow: none;
   background-color: #f4f4ff;
   border-color: #5051f9 !important;
+  transition: all 0.75s ease-out;
 }
 .multi-button a:active {
   color: white;
-  background-color: var(--color-secondary);
+  background-color: #5051f9;
   border-color: #5051f9;
 }
 
@@ -1182,16 +1164,13 @@ body .dl-backtotop:hover {
   margin: 0 5px;
   border-radius: 80px;
 }
-/* .multi-button a:active span{
-    background-color: red !important;
-} */
 .filterButtonactive > span {
   background-color: #fff !important;
   color: #5051f9 !important;
 }
 .filterButtonactive {
   color: white !important;
-  background-color: var(--color-secondary) !important;
+  background-color: #5051f9 !important;
   border-color: #5051f9 !important;
 }
 .headingSection {
