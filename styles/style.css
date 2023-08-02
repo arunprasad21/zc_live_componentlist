@@ -259,6 +259,11 @@ body {
 .dl-sidebar-menu .dl-sidenav-list ul:first-child {
   margin-top: 0px;
 }
+.dl-sidebar-menu .dl-components-title {
+    position: sticky;
+    top: 0;
+    background: #07012c;
+}
 .dl-sidebar-menu .dl-components-title a {
   padding: 13px 30px;
   font-size: 18px;
@@ -284,24 +289,24 @@ body {
 
 .dl-sidebar-menu .dl-components a:hover,
 .dl-sidebar-menu .dl-components a:focus {
-  background-color: #4D476B;
+  background-color: #4d476b;
   color: #fff;
   border-radius: 4px;
-  transition: all .35s ease-out;
+  transition: all 0.35s ease-out;
 
   /* border-left: 2px solid transparent; */
 }
 .dl-sidebar-menu .dl-components.selected {
-  background-color: #5051f9 ;
-  color: #fff ;
+  background-color: #5051f9;
+  color: #fff;
   border-radius: 4px;
-  transition: all .35s ease-out;
+  transition: all 0.35s ease-out;
   /* border-left: 4px solid #5051f9 !important; */
 }
 .dl-sidebar-menu .dl-components.selected a {
   background-color: #5051f9 !important;
   color: #fff;
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
 }
 .dl-sidebar-menu .dl-components {
   /* border-left: 4px solid transparent; */
@@ -1104,8 +1109,8 @@ body .dl-backtotop:hover {
   font-size: 20px;
   padding: 20px 30px;
 }
-#nonguideline{
-    margin: 20px 0;
+#nonguideline {
+  margin: 20px 0;
 }
 
 .multi-button {
