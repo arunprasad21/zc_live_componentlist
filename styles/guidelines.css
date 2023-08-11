@@ -709,7 +709,7 @@ form[name="Academics"].label-top {
 }
 
 a {
-    color: #1abc9c;
+    /* color: #1abc9c; */
 }
 
 .select2-container .select2-choice {

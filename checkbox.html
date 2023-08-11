@@ -2,9 +2,9 @@
     <div>
         <h2>Checkbox</h2>
     </div>
-    <div class="multi-button">   
+    <div class="multi-button">
         <a onclick="setButtonActive(this)" class="filterButton" href="#guideline">Guideline
-            <span>6</span></a>
+            <span>7</span></a>
         <a onclick="setButtonActive(this)" class="filterButton" href="#nonguideline">Non-Guideline
             <span>3</span>
         </a>
@@ -12,8 +12,9 @@
 </div>
 <div class="dl-preview-body-wrapper zc-live-clearfix">
     <div class="dl-preview-body">
+        <div id="guideline"></div>
         <!--component-->
-        <div class="dl-preview-content " id="guideline">
+        <div class="dl-preview-content " id="0">
             <div class="zc-live-clearfix">
                 <h3>Default Checkbox</h3>
                 <!-- <h4>A button indicate primary state with specific color</h4> -->
@@ -24,7 +25,7 @@
         </div>
         <!--component-->
         <!--component-->
-        <div class="dl-preview-content" id="primary-button">
+        <div class="dl-preview-content" id="1">
             <div class="zc-live-clearfix">
                 <h3>Decision Checkbox</h3>
             </div>
@@ -34,7 +35,7 @@
         </div>
         <!--component-->
         <!--component-->
-        <div class="dl-preview-content" id="primary-button">
+        <div class="dl-preview-content" id="2">
             <div class="zc-live-clearfix">
                 <h3>Table header and cell checkbox</h3>
             </div>
@@ -44,7 +45,7 @@
         </div>
         <!--component-->
         <!--component-->
-        <div class="dl-preview-content" id="primary-button">
+        <div class="dl-preview-content" id="3">
             <div class="zc-live-clearfix">
                 <h3>Dropdownlist with checkbox</h3>
             </div>
@@ -54,7 +55,7 @@
         </div>
         <!--component-->
         <!--component-->
-        <div class="dl-preview-content" id="primary-button">
+        <div class="dl-preview-content" id="4">
             <div class="zc-live-clearfix">
                 <h3>Search slider</h3>
                 <!-- <h4>A button indicate primary state with specific color</h4> -->
@@ -65,12 +66,22 @@
         </div>
         <!--component-->
         <!--component-->
-        <div class="dl-preview-content" id="primary-button">
+        <div class="dl-preview-content" id="5">
             <div class="zc-live-clearfix">
                 <h3>Checkbox with tooltip</h3>
             </div>
             <div class="dl-component-wrapper">
                 <img src="images/Components/checkbox/checkboxwithtooltip.png" width="300px">
+            </div>
+        </div>
+        <!--component-->
+        <!--component-->
+        <div class="dl-preview-content" id="6">
+            <div class="zc-live-clearfix">
+                <h3>Disabled Checkbox</h3>
+            </div>
+            <div class="dl-component-wrapper">
+                <img src="images/Components/checkbox/checkboxdisabled.png" width="300px">
             </div>
         </div>
         <!--component-->
@@ -80,7 +91,7 @@
             <div class="sectionBadge">3</div>
         </div>
         <!--component-->
-        <div class="dl-preview-content" id="primary-button">
+        <div class="dl-preview-content" id="7">
             <div class="zc-live-clearfix">
                 <h3>Import local checkbox</h3>
             </div>
@@ -90,7 +101,7 @@
         </div>
         <!--component-->
         <!--component-->
-        <div class="dl-preview-content" id="primary-button">
+        <div class="dl-preview-content" id="8">
             <div class="zc-live-clearfix">
                 <h3>Pivot filter checkbox</h3>
             </div>
@@ -100,7 +111,7 @@
         </div>
         <!--component-->
         <!--component-->
-        <div class="dl-preview-content" id="primary-button">
+        <div class="dl-preview-content" id="9">
             <div class="zc-live-clearfix">
                 <h3>Pivot chart items checkbox</h3>
             </div>
@@ -113,11 +124,20 @@
     </div>
     <div id="dl-right-nav" class="dl-rightside-nav">
         <div class="asdf">
-            <h3>Button</h3>
+            <h3>Checkbox</h3>
             <ul onclick="myFunction(event)">
-                <li>
-                    <a href="#primary-button" tabindex="1" aria-label="Jump to Primary button">Primary button</a>
-                </li>
+                <h2 class="rightsideNav-heading"><a>Guideline</a></h2>
+                <li><a href="#0" tabindex="1">Default checkbox</a></li>
+                <li><a href="#1" tabindex="1">Decision checkbox</a></li>
+                <li><a href="#2" tabindex="1">Table header and cell checkbox</a></li>
+                <li><a href="#3" tabindex="1">Dropdownlist with checkbox</a></li>
+                <li><a href="#4" tabindex="1">Search slider</a></li>
+                <li><a href="#5" tabindex="1">Checkbox with tooltip</a></li>
+                <li><a href="#6" tabindex="1">Disabled Checkbox</a></li>
+                <h2 class="rightsideNav-heading"><a>Non-Guideline</a></h2>
+                <li><a href="#7" tabindex="1">Import local checkbox</a></li>
+                <li><a href="#8" tabindex="1">Pivot filter checkbox</a></li>
+                <li><a href="#9" tabindex="1">Pivot chart items checkbox</a></li>
             </ul>
         </div>
     </div>
