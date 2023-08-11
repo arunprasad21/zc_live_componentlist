@@ -2,21 +2,15 @@
     <div>
         <h2>Dropdown</h2>
     </div>
-    <div class="dl-theme-icon flt-right" onclick="ThemeFunction()">
-        <i class="zc-em zc-common-themes theme-icon"></i>
+    <div class="multi-button">
+        <a onclick="setButtonActive(this)" class="filterButton" href="#guideline">Guideline
+            <span>26</span></a>
+        <a onclick="setButtonActive(this)" class="filterButton" href="#nonguideline">Non-Guideline
+            <span>7</span>
+        </a>
     </div>
 </div>
 <div class="dl-preview-body-wrapper zc-live-clearfix">
-    <div class="filter-container">
-        <div class="multi-button">
-            
-            <a onclick="setButtonActive(this)" class="filterButton" href="#guideline">Guideline
-                <span>26</span></a>
-            <a onclick="setButtonActive(this)" class="filterButton" href="#nonguideline">Non-Guideline
-                <span>7</span>
-            </a>
-        </div>
-    </div>
     <div class="dl-preview-body">
         <!--component-->
         <div class="dl-preview-content " id="guideline">
@@ -286,7 +280,7 @@
         <!--component-->
 
         <div class="headingSection" id="nonguideline">
-            <h2 id="divElement">Guideline missed components</h2>
+            <h2 id="divElement">Non-Guideline components</h2>
             <div class="sectionBadge">7</div>
         </div>
         <!--component-->

@@ -384,7 +384,7 @@ body {
 }
 .dl-preview-container .dl-preview-header div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .dl-preview-container .dl-preview-header h2 {
@@ -405,11 +405,13 @@ body {
 /*preview container body*/
 
 .dl-preview-container .dl-preview-body-wrapper {
-  position: relative;
+  /* position: relative; */
   clear: left;
   height: 100%;
-  padding-top: 118px;
+  padding-top: 71px;
   box-sizing: border-box;
+  display: flex;
+ 
 }
 .dl-preview-container .dl-preview-body {
   /* display: inline-block; */
@@ -642,7 +644,7 @@ body {
   top: 0px;
   height: 100%;
   width: 300px;
-  padding-top: 120px;
+  padding-top: 71px;
   /* border-left: 1px solid #cccccc; */
 }
 .dl-rightside-nav ul {
