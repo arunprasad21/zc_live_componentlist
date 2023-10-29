@@ -91,6 +91,7 @@ video {
   list-style-image: initial;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  scroll-padding-top: 20px;
 }
 /* HTML5 display-role reset for older browsers */
 
@@ -111,9 +112,6 @@ html {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-}
-body {
-  line-height: 1;
 }
 ol,
 ul {
@@ -147,6 +145,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   color: #121637;
+  line-height: 1;
 }
 .dl-main-container {
   height: 100%;
